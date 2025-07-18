@@ -1,0 +1,30 @@
+{
+  "name": "@monstrs/prettier-plugin-import-sort",
+  "version": "0.3.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint --ext .ts --ext .tsx src",
+    "lint:fix": "eslint --ext .ts --ext .tsx src --fix"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "globby": "^14.1.0",
+    "import-sort": "^6.0.0",
+    "import-sort-parser": "^6.0.0",
+    "import-sort-parser-typescript2": "^6.0.0",
+    "import-sort-parser-babylon": "^6.0.0",
+    "import-sort-style": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.31.0",
+    "@monstrs/eslint-config": "^0.4.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.0.14",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  }
+}
