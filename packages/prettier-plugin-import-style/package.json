@@ -1,0 +1,23 @@
+{
+  "name": "@monstrs/prettier-plugin-import-style",
+  "version": "0.3.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint --ext .ts --ext .tsx src",
+    "lint:fix": "eslint --ext .ts --ext .tsx src --fix"
+  },
+  "dependencies": {
+    "@monstrs/prettier-plugin-import-align": "workspace:*",
+    "@monstrs/prettier-plugin-import-split": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "eslint": "^9.31.0",
+    "@monstrs/eslint-config": "^0.4.0"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  }
+}
