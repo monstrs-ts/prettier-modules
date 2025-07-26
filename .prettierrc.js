@@ -5,9 +5,5 @@ export default {
   jsxSingleQuote: true,
   trailingComma: 'es5',
   printWidth: 100,
-  plugins: [
-    '@monstrs/prettier-plugin-import-sort',
-    '@monstrs/prettier-plugin-import-split',
-    '@monstrs/prettier-plugin-import-align',
-  ],
+  plugins: ['@monstrs/prettier-plugin-import-sort', '@monstrs/prettier-plugin-import-style'],
 }

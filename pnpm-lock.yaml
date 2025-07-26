@@ -7,15 +7,12 @@ settings:
 importers:
   .:
     devDependencies:
-      '@monstrs/prettier-plugin-import-align':
-        specifier: workspace:*
-        version: link:packages/prettier-plugin-import-align
       '@monstrs/prettier-plugin-import-sort':
         specifier: workspace:*
         version: link:packages/prettier-plugin-import-sort
-      '@monstrs/prettier-plugin-import-split':
+      '@monstrs/prettier-plugin-import-style':
         specifier: workspace:*
-        version: link:packages/prettier-plugin-import-split
+        version: link:packages/prettier-plugin-import-style
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -84,6 +81,28 @@ importers:
 
   packages/prettier-plugin-import-split:
     dependencies:
+      prettier:
+        specifier: ^3
+        version: 3.6.2
+    devDependencies:
+      '@monstrs/eslint-config':
+        specifier: ^0.4.0
+        version: 0.4.0(eslint@9.31.0)(typescript@5.8.3)
+      '@types/node':
+        specifier: ^24.0.14
+        version: 24.0.14
+      eslint:
+        specifier: ^9.31.0
+        version: 9.31.0
+
+  packages/prettier-plugin-import-style:
+    dependencies:
+      '@monstrs/prettier-plugin-import-align':
+        specifier: workspace:*
+        version: link:../prettier-plugin-import-align
+      '@monstrs/prettier-plugin-import-split':
+        specifier: workspace:*
+        version: link:../prettier-plugin-import-split
       prettier:
         specifier: ^3
         version: 3.6.2
